@@ -2,26 +2,44 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+@layer components {
+  /* Large Bold Text: Font size 21px, Weight 800 */
+  .large-bold-text {
+    @apply fs-large-bold font-extrabold leading-8;
   }
-}
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  /* Medium Normal Text: Font size 18px, Weight 400 */
+  .medium-normal-text {
+    @apply fs-medium-normal font-normal leading-7;
+  }
+
+  /* Huge ExtraBold Text: Font size 130px, Weight 800 */
+  .huge-extrabold-text {
+    @apply text-fs-huge-extrabold font-extrabold leading-none;
+  }
+
+  /* Larger Medium Text: Font size 22px, Weight 500 */
+  .larger-medium-text {
+    @apply fs-larger-medium font-medium leading-9;
+  }
+
+  /* Extra Large ExtraBold Text: Font size 75px, Weight 800 */
+  .xlarge-extrabold-text {
+    @apply fs-xlarge-extrabold font-extrabold leading-tight;
+  }
+
+  /* Extra Large Bold Text: Font size 28px, Weight 800 */
+  .xl-bold-text {
+    @apply fs-xl-bold font-extrabold leading-10;
+  }
+
+  /* Large Medium Text: Font size 20px, Weight 500 */
+  .large-medium-text {
+    @apply fs-large-medium font-medium leading-8;
+  }
+
+  /* Larger Bold Text: Font size 25px, Weight 800 */
+  .larger-bold-text {
+    @apply fs-larger-bold font-extrabold leading-9;
+  }
 }
