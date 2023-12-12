@@ -56,7 +56,7 @@ const Navbar = () => {
         />
       </div>
       <div className={`navbar flex-center sticky w-full bg-transparent px-12`}>
-        <div className="flex-between w-[85%] whitespace-nowrap rounded-2xl border border-dark-grey-border bg-dark-grey p-4">
+        <div className="flex-between w-[85%] whitespace-nowrap rounded-2xl border border-dark-grey-border bg-dark-grey p-4  shadow-xl">
           <div className="flex-center gap-[18px]">
             <Image src="/logo.svg" width={67} height={47} alt="logo" />
             <h4>Ctrl</h4>
@@ -69,7 +69,7 @@ const Navbar = () => {
                     activeSection === link.sectionID
                       ? "!text-light transition-colors"
                       : " "
-                  }`}
+                  } hover-effect`}
                   key={link.label}
                 >
                   <Link href={`#${link.sectionID}`}>{link.label}</Link>
@@ -98,7 +98,7 @@ const Navbar = () => {
               className={`${
                 activeSection === link.sectionID &&
                 "!text-light transition-colors"
-              }`}
+              } hover-effect`}
               key={link.label}
             >
               <Link href={`#${link.sectionID}`}>{link.label}</Link>

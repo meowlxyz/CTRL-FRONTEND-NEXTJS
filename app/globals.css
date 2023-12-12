@@ -60,6 +60,23 @@
   .larger-bold-text {
     @apply text-fs-larger-bold font-extrabold leading-9;
   }
+
+  .hover-effect {
+    @apply relative inline-block;
+  }
+
+  .hover-effect::after {
+    @apply absolute block w-0 h-0.5 bg-current;
+    content: '';
+    left: 50%;
+    bottom: -0.25rem; /* Adjust as needed */
+    transition: width 0.3s ease, left 0.3s ease;
+  }
+
+  .hover-effect:hover::after {
+    @apply w-full;
+    left: 0;
+  }
 }
 
 
@@ -82,7 +99,7 @@
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 1000;
+  z-index: 9999;
   background-color: transparent;
   animation: slideDown 0.5s;
 }
