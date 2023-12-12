@@ -30,7 +30,11 @@ const config: Config = {
       "fs-larger-bold": "1.5625rem", // 25px
     },
     backgroundImage: {
-      "ellipse-gradient":
+      "small-ellipse-gradient":
+        "radial-gradient(174.47% 174.47% at 22.23% -26.02%, #BDBDBD 0%, #0C0C0C 58.96%, #000000 100%)",
+      "medium-ellipse-gradient":
+        "radial-gradient(188.67% 188.67% at 17.98% -47.13%, #9E9E9E 0%, #242424 43.46%, #0C0C0C 58.96%, #010101 76.94%, #000000 100%)",
+      "large-ellipse-gradient":
         "radial-gradient(188.67% 188.67% at 17.98% -47.13%, #9E9E9E 0%, #242424 43.46%, #0C0C0C 58.96%, #010101 76.94%, #000000 100%)",
     },
   },

@@ -7,9 +7,9 @@ import Ellipse from "../shared/ellipse/Ellipse";
 
 const Welcome = () => {
   return (
-    <div className="relative h-full w-full">
+    <section className="relative h-full w-full" id="ctrl">
       <Image
-        layout="fill"
+        fill
         className="pointer-events-none object-cover object-top"
         src="./assets/bg-vector.svg"
         alt="bg-image"
@@ -21,14 +21,38 @@ const Welcome = () => {
           <span className="relative">
             <Ellipse
               width={53.63}
-              classes="absolute -top-[-0.15em] -left-[-0.3em] z-50"
+              classes="absolute -top-[-0.15em] -left-[-0.3em] z-50 bg-small-ellipse-gradient"
             />
             <span className="relative z-10">r</span>{" "}
           </span>
           All-<span className="text-primary">in</span>-One
-          <br /> Trading Terminal
+          <br /> Trading Termina
+          <span className="relative">
+            <Ellipse
+              width={228.69}
+              classes="absolute -top-[0.1em] -left-[-0.7em] z-50 bg-large-ellipse-gradient"
+            />
+            <span className="relative z-10">l</span>
+          </span>
           <br />
-          on Telegram
+          <span className="relative">
+            <Ellipse
+              width={178.13}
+              classes="absolute -top-[-0.1em] -left-[3.6em] z-50 bg-medium-ellipse-gradient"
+            />
+            <span className="relative z-10">on</span>
+          </span>{" "}
+          <span className="whitespace-nowrap">
+            Te
+            <span className="relative">
+              <Ellipse
+                width={43.82}
+                classes="absolute -top-[-0.15em] -left-[-0.15em] z-50 bg-small-ellipse-gradient"
+              />
+              <span className="relative z-10">l</span>
+            </span>
+            egram
+          </span>
         </h1>
         <p className="larger-medium-text mt-14 text-center text-ligt-muted-grey">
           Experience seamless and lightning-fast trading on the go with our{" "}
@@ -41,7 +65,7 @@ const Welcome = () => {
           onClick={() => {}}
         />
       </div>
-    </div>
+    </section>
   );
 };
 

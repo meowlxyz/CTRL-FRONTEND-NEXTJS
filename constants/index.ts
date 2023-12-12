@@ -2,19 +2,19 @@ import { SidebarLink } from "@/types";
 
 export const sidebarLinks: SidebarLink[] = [
   {
-    sectionID: "#entry",
-    label: "What is ctrl",
+    sectionID: "ctrl",
+    label: "•   What is ctrl",
   },
   {
-    sectionID: "#staking",
+    sectionID: "staking",
     label: "Staking",
   },
   {
-    sectionID: "#revenue",
+    sectionID: "revenue",
     label: "Revenue Share",
   },
   {
-    sectionID: "#tokeneconomice",
+    sectionID: "tokeneconomice",
     label: "Tokeneconomice",
   },
 ];
