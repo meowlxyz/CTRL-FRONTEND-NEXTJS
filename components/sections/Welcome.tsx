@@ -4,17 +4,18 @@ import Navbar from "../shared/navbar/Navbar";
 import Button from "../ui/button/Button";
 import Image from "next/image";
 import Ellipse from "../shared/ellipse/Ellipse";
+import WhatIsCtrl from "./WhatIsCtrl";
 
 const Welcome = () => {
   return (
     <section className="relative h-full w-full" id="ctrl">
       <Image
         fill
-        className="pointer-events-none object-cover object-top"
+        className="pointer-events-none object-contain object-top"
         src="./assets/bg-vector.svg"
         alt="bg-image"
       />
-      <div className="relative z-10 flex h-full w-full flex-col items-center p-12 pb-0 text-light">
+      <div className="relative z-10 flex h-full w-full flex-col items-center p-12 pb-[10rem] text-light">
         <Navbar />
         <h1 className="huge-extrabold-text mt-[8rem] text-center uppercase">
           You
@@ -64,6 +65,9 @@ const Welcome = () => {
           classes="text-lg mt-14 leading-[27.9px] px-10 py-5 text-[22px] leading-[34px] tracking-normal"
           onClick={() => {}}
         />
+      </div>
+      <div className="h-[1048.44px] w-full p-12 pb-0">
+        <WhatIsCtrl />
       </div>
     </section>
   );
