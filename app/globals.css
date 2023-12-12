@@ -2,15 +2,33 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+  .flex-center {
+    @apply flex justify-center items-center;
+  }
+
+  .flex-between {
+    @apply flex justify-between items-center;
+  }
+
+  .flex-start {
+    @apply flex justify-start items-center;
+  }
+
+  .no-focus {
+    @apply focus-visible:ring-0 focus-visible:ring-transparent focus-visible:ring-offset-0 !important;
+  }
+}
+
 @layer components {
   /* Large Bold Text: Font size 21px, Weight 800 */
   .large-bold-text {
-    @apply fs-large-bold font-extrabold leading-8;
+    @apply text-fs-large-bold font-extrabold leading-8;
   }
 
   /* Medium Normal Text: Font size 18px, Weight 400 */
   .medium-normal-text {
-    @apply fs-medium-normal font-normal leading-7;
+    @apply text-fs-medium-normal font-normal leading-7;
   }
 
   /* Huge ExtraBold Text: Font size 130px, Weight 800 */
@@ -20,26 +38,33 @@
 
   /* Larger Medium Text: Font size 22px, Weight 500 */
   .larger-medium-text {
-    @apply fs-larger-medium font-medium leading-9;
+    @apply text-fs-larger-medium font-medium leading-9;
   }
 
   /* Extra Large ExtraBold Text: Font size 75px, Weight 800 */
   .xlarge-extrabold-text {
-    @apply fs-xlarge-extrabold font-extrabold leading-tight;
+    @apply text-fs-xlarge-extrabold font-extrabold leading-tight;
   }
 
   /* Extra Large Bold Text: Font size 28px, Weight 800 */
   .xl-bold-text {
-    @apply fs-xl-bold font-extrabold leading-10;
+    @apply text-fs-xl-bold font-extrabold leading-10;
   }
 
   /* Large Medium Text: Font size 20px, Weight 500 */
   .large-medium-text {
-    @apply fs-large-medium font-medium leading-8;
+    @apply text-fs-large-medium font-medium leading-8;
   }
 
   /* Larger Bold Text: Font size 25px, Weight 800 */
   .larger-bold-text {
-    @apply fs-larger-bold font-extrabold leading-9;
+    @apply text-fs-larger-bold font-extrabold leading-9;
   }
+}
+
+
+.ellipse-shadow {
+  box-shadow: 0px -0.4830077886581421px 36.547767639160156px 0px #06060696 inset;
+  box-shadow: 0px 10.963541030883789px 19.29583168029785px 0px #000000;
+  
 }

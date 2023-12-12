@@ -8,7 +8,16 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {},
+      colors: {
+        primary: "#FF389B",
+        dark: "#000000",
+        light: "#FFFFFF",
+        paragraph: "#383938",
+        "dark-grey": "#121212",
+        "dark-grey-border": "#1F1F1F",
+        "muted-grey": "#717171",
+        "ligt-muted-grey": "#999598",
+      },
     },
     fontSize: {
       "fs-large-bold": "1.3125rem", // 21px
@@ -19,6 +28,10 @@ const config: Config = {
       "fs-xl-bold": "1.75rem", // 28px
       "fs-large-medium": "1.25rem", // 20px
       "fs-larger-bold": "1.5625rem", // 25px
+    },
+    backgroundImage: {
+      "ellipse-gradient":
+        "radial-gradient(188.67% 188.67% at 17.98% -47.13%, #9E9E9E 0%, #242424 43.46%, #0C0C0C 58.96%, #010101 76.94%, #000000 100%)",
     },
   },
   plugins: [],
