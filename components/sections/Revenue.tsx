@@ -9,7 +9,7 @@ const Revenue = () => {
         <div className="flex w-[39%] flex-col gap-7">
           <div className="flex flex-col gap-5">
             <h4 className="larger-medium-text text-primary">
-              PROGRAM USING A SPECIFIIC
+              PROGRAM USING A SPECIFIC
             </h4>
             <h2 className="xlarge-extrabold-text uppercase">Share & Earn</h2>
           </div>

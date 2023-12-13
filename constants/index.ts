@@ -14,8 +14,8 @@ export const sidebarLinks: SidebarLink[] = [
     label: "Revenue Share",
   },
   {
-    sectionID: "tokeneconomice",
-    label: "Tokeneconomice",
+    sectionID: "tokenomics",
+    label: "Tokenomics",
   },
 ];
 
