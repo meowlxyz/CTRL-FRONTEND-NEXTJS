@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Video = () => {
   return (
-    <section id="tokeneconomice" className="relative text-white">
+    <section id="tokenomics" className="relative text-white">
       <Image
         fill
         className="pointer-events-none z-[-1] object-cover object-top pt-[5rem]"
