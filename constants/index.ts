@@ -1,4 +1,4 @@
-import { SidebarLink, FeaturesTableItem } from "@/types";
+import { SidebarLink, FeaturesTableItem, SupplyTableItem } from "@/types";
 
 export const sidebarLinks: SidebarLink[] = [
   {
@@ -39,5 +39,26 @@ export const featuresTableItems: FeaturesTableItem[] = [
       "Real-time charts, detailed portfolio management, manage positions and in-depth token information.",
     iconUrl: "/icons/trade.svg",
     bgColor: "#132417",
+  },
+];
+
+export const supplyTableItems: SupplyTableItem[] = [
+  {
+    title: "Circulating Supply",
+    iconColor:
+      "linear-gradient(90deg, #FF389B 0%, rgba(255, 56, 155, 0) 117.72%)",
+    percentage: 60,
+  },
+  {
+    title: "Foundation Treasury",
+    iconColor:
+      "linear-gradient(90deg, #9F29D0 0%, rgba(159, 41, 208, 0) 111.05%)",
+    percentage: 20,
+  },
+  {
+    title: "CTRL Labs",
+    iconColor:
+      "linear-gradient(90deg, #D85D62 0%, rgba(216, 93, 98, 0) 114.32%)",
+    percentage: 20,
   },
 ];

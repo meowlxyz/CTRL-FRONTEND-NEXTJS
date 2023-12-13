@@ -5,7 +5,10 @@ import ImageFrame from "../shared/image-frame/ImageFrame";
 
 const WhatIsCtrl = () => {
   return (
-    <section id="ctrl" className="flex-between flex-wrap items-center p-20">
+    <section
+      id="ctrl"
+      className="flex w-full flex-wrap items-center justify-between"
+    >
       <div className="flex w-[39%] flex-col gap-8 text-light">
         <div className="flex flex-col gap-6">
           <h6 className="larger-medium-text uppercase text-primary">
@@ -20,7 +23,7 @@ const WhatIsCtrl = () => {
             return (
               <div
                 key={item.title}
-                className="flex flex-row gap-6 rounded-2xl border border-dark-grey-border bg-dark-grey p-8"
+                className="flex flex-row gap-6 rounded-2xl border border-dark-grey-border bg-dark p-8 transition-colors hover:bg-[#121212]"
               >
                 <div
                   className="flex-center aspect-square h-[72px] w-[72px] rounded-full"
@@ -47,9 +50,8 @@ const WhatIsCtrl = () => {
           })}
         </div>
       </div>
-      <div className="w-min">
-        <ImageFrame />
-      </div>
+
+      <ImageFrame imageUrl="/assets/home-page-iphone.png" />
     </section>
   );
 };

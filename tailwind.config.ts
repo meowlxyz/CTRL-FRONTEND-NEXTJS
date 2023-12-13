@@ -17,6 +17,7 @@ const config: Config = {
         "dark-grey-border": "#1F1F1F",
         "muted-grey": "#717171",
         "ligt-muted-grey": "#999598",
+        "light-muted-white": "#E5E0E4",
       },
     },
     fontSize: {

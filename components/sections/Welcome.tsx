@@ -15,7 +15,7 @@ const Welcome = () => {
         src="./assets/bg-vector.svg"
         alt="bg-image"
       />
-      <div className="relative z-10 flex h-full w-full flex-col items-center p-12 pb-[10rem] text-light">
+      <div className="relative z-10 flex h-full w-full flex-col items-center p-12 pb-[7.5rem] text-light">
         <Navbar />
         <h1 className="huge-extrabold-text mt-[8rem] text-center uppercase">
           You
@@ -63,11 +63,13 @@ const Welcome = () => {
         <Button
           label="Start trading"
           classes="text-lg mt-14 leading-[27.9px] px-10 py-5 text-[22px] leading-[34px] tracking-normal"
-          onClick={() => {}}
+          href="https://t.me/ctrl_app_bot/trade"
         />
       </div>
-      <div className="h-[1048.44px] w-full p-12 pb-0">
-        <WhatIsCtrl />
+      <div className="h-full w-full p-12 pt-0">
+        <div className="h-full w-full p-0 2xl:p-20">
+          <WhatIsCtrl />
+        </div>
       </div>
     </section>
   );

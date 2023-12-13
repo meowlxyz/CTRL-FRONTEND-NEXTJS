@@ -79,15 +79,22 @@
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+::selection {
+  background-color: #FF389B; /* This is the Tailwind 'amber-400' color as an example */
+  color: #000; /* Optional: Change text color during selection */
+}
 
 .ellipse-shadow {
   box-shadow: 0px -0.4830077886581421px 36.547767639160156px 0px #06060696 inset;
   box-shadow: 0px 10.963541030883789px 19.29583168029785px 0px #000000;  
 }
 
-::selection {
-  background-color: #FF389B; /* This is the Tailwind 'amber-400' color as an example */
-  color: #000; /* Optional: Change text color during selection */
+.label-shadow{
+  box-shadow: 0px 23.123960494995117px 38.53993225097656px 0px #00000040;
 }
 
 .navbar {
@@ -111,4 +118,13 @@
   to {
     top: 0;
   }
+}
+
+video {
+  pointer-events: none;
+}
+
+.label {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }

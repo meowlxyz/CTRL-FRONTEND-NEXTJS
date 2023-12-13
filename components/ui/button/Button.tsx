@@ -1,18 +1,21 @@
+import Link from "next/link";
 import React from "react";
 
 interface ButtonProps {
   label: string;
-  onClick: () => void;
+  href: string;
   classes?: string;
 }
 
-const Button = ({ label, onClick, classes }: ButtonProps) => {
+const Button = ({ label, href, classes }: ButtonProps) => {
   return (
-    <button
-      className={`no-focus rounded-lg bg-primary font-medium capitalize ${classes}`}
-    >
-      {label}
-    </button>
+    <Link href={href} target="_blank">
+      <button
+        className={`no-focus rounded-lg bg-primary font-medium capitalize ${classes}`}
+      >
+        {label}
+      </button>
+    </Link>
   );
 };
 
