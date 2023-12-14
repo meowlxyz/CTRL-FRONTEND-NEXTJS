@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { sidebarLinks } from "@/constants";
-import Button from "@/components/ui/button/Button";
+import WalletConnectButton from "./WalletConnectButton";
 
 const Navbar = () => {
   const [isSticky, setIsSticky] = useState(false);
@@ -55,11 +55,7 @@ const Navbar = () => {
             ))}
           </ol>
         </nav>
-        <Button
-          label="Connect Wallet"
-          href="https://t.me/ctrl_app_bot/trade"
-          classes="text-[18px] leading-7 px-[30px] py-[15px]"
-        />
+        <WalletConnectButton />
       </div>
       <div className={`navbar flex-center sticky w-full bg-transparent px-12`}>
         <div className="flex-between w-[85%] whitespace-nowrap rounded-2xl border border-dark-grey-border bg-dark-grey p-4  shadow-xl">
@@ -83,11 +79,7 @@ const Navbar = () => {
               ))}
             </ol>
           </nav>
-          <Button
-            label="Connect Wallet"
-            href="https://t.me/ctrl_app_bot/trade"
-            classes="text-[18px] leading-7 px-[30px] py-[15px]"
-          />
+          <WalletConnectButton />
         </div>
       </div>
     </>
@@ -112,11 +104,7 @@ const Navbar = () => {
           ))}
         </ol>
       </nav>
-      <Button
-        label="Connect Wallet"
-        href="https://t.me/ctrl_app_bot/trade"
-        classes="text-[18px] leading-7 px-[30px] py-[15px]"
-      />
+      <WalletConnectButton />
     </div>
   );
 };

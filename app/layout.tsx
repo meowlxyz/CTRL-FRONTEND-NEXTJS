@@ -2,6 +2,8 @@ import React from "react";
 import type { Metadata } from "next";
 // eslint-disable-next-line camelcase
 import { JetBrains_Mono } from "next/font/google";
+import { Providers } from "@/providers/WalletConntectionProvider";
+import "@rainbow-me/rainbowkit/styles.css";
 import "./globals.css";
 
 const jetBrainsMono = JetBrains_Mono({
@@ -17,10 +19,16 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html lang="en">
-      <body className={jetBrainsMono.className + " bg-black"}>{children}</body>
+      <body className={jetBrainsMono.className + " bg-black"}>
+        <Providers>{children}</Providers>
+      </body>
     </html>
   );
 }
