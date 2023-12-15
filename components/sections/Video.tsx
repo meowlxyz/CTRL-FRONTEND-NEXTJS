@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Video = () => {
   return (
-    <section id="tokenomics" className="relative text-white">
+    <div className="relative text-white">
       <Image
         fill
         className="pointer-events-none z-[-1] object-cover object-top pt-[5rem]"
@@ -33,7 +33,7 @@ const Video = () => {
           </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 

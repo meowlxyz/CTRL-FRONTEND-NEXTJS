@@ -4,7 +4,10 @@ import { supplyTableItems } from "@/constants";
 
 const Supply = () => {
   return (
-    <div className="flex w-full flex-col items-center gap-10 text-white">
+    <section
+      className="flex w-full flex-col items-center gap-10 text-white"
+      id="tokenomics"
+    >
       <div className="flex flex-col gap-8 text-center">
         <h1 className="xlarge-extrabold-text uppercase">Supply</h1>
         <p className="larger-medium-text text-ligt-muted-grey">
@@ -45,7 +48,7 @@ const Supply = () => {
           })}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
