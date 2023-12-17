@@ -21,44 +21,51 @@
 }
 
 @layer components {
-  /* Large Bold Text: Font size 21px, Weight 800 */
   .large-bold-text {
     @apply text-fs-large-bold font-extrabold leading-8;
+    @apply lg:text-lg xl:text-xl 2xl:text-2xl;
   }
-
-  /* Medium Normal Text: Font size 18px, Weight 400 */
+  
+  /* Medium Normal Text */
   .medium-normal-text {
     @apply text-fs-medium-normal font-normal leading-7;
+    @apply lg:text-base xl:text-lg
   }
-
-  /* Huge ExtraBold Text: Font size 130px, Weight 800 */
+  
+  /* Huge ExtraBold Text */
   .huge-extrabold-text {
     @apply text-fs-huge-extrabold font-extrabold leading-none;
+    @apply max-xl:text-8xl
   }
-
-  /* Larger Medium Text: Font size 22px, Weight 500 */
+  
+  /* Larger Medium Text */
   .larger-medium-text {
     @apply text-fs-larger-medium font-medium leading-9;
+    @apply lg:text-lg xl:text-xl 
   }
-
-  /* Extra Large ExtraBold Text: Font size 75px, Weight 800 */
+  
+  /* Extra Large ExtraBold Text */
   .xlarge-extrabold-text {
     @apply text-fs-xlarge-extrabold font-extrabold leading-tight;
+    @apply lg:text-2xl xl:text-3xl
   }
-
-  /* Extra Large Bold Text: Font size 28px, Weight 800 */
+  
+  /* Extra Large Bold Text */
   .xl-bold-text {
     @apply text-fs-xl-bold font-extrabold leading-10;
+    @apply lg:text-lg xl:text-xl 
   }
-
-  /* Large Medium Text: Font size 20px, Weight 500 */
+  
+  /* Large Medium Text */
   .large-medium-text {
     @apply text-fs-large-medium font-medium leading-8;
+    @apply lg:text-base xl:text-lg
   }
-
-  /* Larger Bold Text: Font size 25px, Weight 800 */
+  
+  /* Larger Bold Text */
   .larger-bold-text {
     @apply text-fs-larger-bold font-extrabold leading-9;
+    @apply lg:text-xl xl:text-2xl 
   }
 
   .hover-effect {

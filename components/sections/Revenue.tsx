@@ -5,8 +5,8 @@ import Image from "next/image";
 const Revenue = () => {
   return (
     <section id="revenue" className="w-full text-white">
-      <div className="flex h-full w-full flex-wrap items-center justify-between">
-        <div className="flex w-[39%] flex-col gap-7">
+      <div className="flex h-full w-full flex-wrap items-center justify-between max-xl:justify-center">
+        <div className="flex w-[39%] flex-col gap-7 max-xl:w-[90%]">
           <div className="flex flex-col gap-5">
             <h4 className="larger-medium-text text-primary">
               PROGRAM USING A SPECIFIC

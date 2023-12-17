@@ -15,7 +15,7 @@ const Welcome = () => {
         src="./assets/bg-vector.svg"
         alt="bg-image"
       />
-      <div className="relative z-10 flex h-full w-full flex-col items-center p-12 pb-[7.5rem] text-light">
+      <div className="relative z-10 flex h-full w-full flex-col items-center p-12 pb-[7.5rem] text-light max-xl:px-6">
         <Navbar />
         <h1 className="huge-extrabold-text mt-[8rem] text-center uppercase">
           You

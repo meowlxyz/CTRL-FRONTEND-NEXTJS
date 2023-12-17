@@ -38,10 +38,10 @@ const Navbar = () => {
       <div className="flex-between w-[85%] whitespace-nowrap rounded-2xl border border-dark-grey-border bg-dark-grey p-4">
         <div className="flex-center gap-[18px]">
           <Image src="/logo.svg" width={67} height={47} alt="logo" />
-          <h4>Ctrl</h4>
+          <h4 className="max-xl:hidden">Ctrl</h4>
         </div>
         <nav className="w-max">
-          <ol className="flex-center medium-normal-text gap-10 px-[30px] py-[15px] capitalize text-muted-grey">
+          <ol className="flex-center medium-normal-text gap-10 px-[30px] py-[15px] capitalize text-muted-grey max-lg:px-[15px]">
             {sidebarLinks.map((link) => (
               <li
                 className={`${
@@ -61,10 +61,10 @@ const Navbar = () => {
         <div className="flex-between w-[85%] whitespace-nowrap rounded-2xl border border-dark-grey-border bg-dark-grey p-4  shadow-xl">
           <div className="flex-center gap-[18px]">
             <Image src="/logo.svg" width={67} height={47} alt="logo" />
-            <h4>Ctrl</h4>
+            <h4 className="max-xl:hidden">Ctrl</h4>
           </div>
           <nav className="w-max">
-            <ol className="flex-center medium-normal-text gap-10 px-[30px] py-[15px] capitalize text-muted-grey">
+            <ol className="flex-center medium-normal-text gap-10 px-[30px] py-[15px] capitalize text-muted-grey max-lg:px-[15px]">
               {sidebarLinks.map((link) => (
                 <li
                   className={`${
@@ -87,10 +87,10 @@ const Navbar = () => {
     <div className="flex-between w-[85%] whitespace-nowrap rounded-2xl border border-dark-grey-border bg-dark-grey p-4">
       <div className="flex-center gap-[18px]">
         <Image src="/logo.svg" width={67} height={47} alt="logo" />
-        <h4>Ctrl</h4>
+        <h4 className="max-xl:hidden">Ctrl</h4>
       </div>
       <nav className="w-max">
-        <ol className="flex-center medium-normal-text gap-10 px-[30px] py-[15px] capitalize text-muted-grey">
+        <ol className="flex-center medium-normal-text gap-10 px-[30px] py-[15px] capitalize text-muted-grey max-lg:px-[15px]">
           {sidebarLinks.map((link) => (
             <li
               className={`${

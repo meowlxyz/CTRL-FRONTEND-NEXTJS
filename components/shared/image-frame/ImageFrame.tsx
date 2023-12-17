@@ -9,7 +9,7 @@ interface ImageFrameProps {
 
 const ImageFrame = ({ imageUrl, reverse }: ImageFrameProps) => {
   return !reverse ? (
-    <div className="relative mx-[7rem]">
+    <div className="relative mx-[7rem] max-xl:hidden">
       <div className="absolute bottom-[12.5em] left-[-7.5em] z-[2]">
         <Ellipse width={148} classes="bg-medium-ellipse-gradient" />
       </div>
@@ -27,7 +27,7 @@ const ImageFrame = ({ imageUrl, reverse }: ImageFrameProps) => {
       </div>
     </div>
   ) : (
-    <div className="relative mx-[7rem]">
+    <div className="relative mx-[7rem] max-xl:hidden">
       <div className="absolute bottom-[12.5em] right-[-7.5em] z-[2]">
         <Ellipse width={148} classes="bg-medium-ellipse-gradient" />
       </div>

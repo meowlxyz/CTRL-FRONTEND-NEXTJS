@@ -19,24 +19,24 @@ const config: Config = {
         "ligt-muted-grey": "#999598",
         "light-muted-white": "#E5E0E4",
       },
-    },
-    fontSize: {
-      "fs-large-bold": "1.3125rem", // 21px
-      "fs-medium-normal": "1.125rem", // 18px
-      "fs-huge-extrabold": "8.125rem", // 130px
-      "fs-larger-medium": "1.375rem", // 22px
-      "fs-xlarge-extrabold": "4.6875rem", // 75px
-      "fs-xl-bold": "1.75rem", // 28px
-      "fs-large-medium": "1.25rem", // 20px
-      "fs-larger-bold": "1.5625rem", // 25px
-    },
-    backgroundImage: {
-      "small-ellipse-gradient":
-        "radial-gradient(174.47% 174.47% at 22.23% -26.02%, #BDBDBD 0%, #0C0C0C 58.96%, #000000 100%)",
-      "medium-ellipse-gradient":
-        "radial-gradient(188.67% 188.67% at 17.98% -47.13%, #9E9E9E 0%, #242424 43.46%, #0C0C0C 58.96%, #010101 76.94%, #000000 100%)",
-      "large-ellipse-gradient":
-        "radial-gradient(188.67% 188.67% at 17.98% -47.13%, #9E9E9E 0%, #242424 43.46%, #0C0C0C 58.96%, #010101 76.94%, #000000 100%)",
+      fontSize: {
+        "fs-large-bold": "1.3125rem", // 21px
+        "fs-medium-normal": "1.125rem", // 18px
+        "fs-huge-extrabold": "8.125rem", // 130px
+        "fs-larger-medium": "1.375rem", // 22px
+        "fs-xlarge-extrabold": "4.6875rem", // 75px
+        "fs-xl-bold": "1.75rem", // 28px
+        "fs-large-medium": "1.25rem", // 20px
+        "fs-larger-bold": "1.5625rem", // 25px
+      },
+      backgroundImage: {
+        "small-ellipse-gradient":
+          "radial-gradient(174.47% 174.47% at 22.23% -26.02%, #BDBDBD 0%, #0C0C0C 58.96%, #000000 100%)",
+        "medium-ellipse-gradient":
+          "radial-gradient(188.67% 188.67% at 17.98% -47.13%, #9E9E9E 0%, #242424 43.46%, #0C0C0C 58.96%, #010101 76.94%, #000000 100%)",
+        "large-ellipse-gradient":
+          "radial-gradient(188.67% 188.67% at 17.98% -47.13%, #9E9E9E 0%, #242424 43.46%, #0C0C0C 58.96%, #010101 76.94%, #000000 100%)",
+      },
     },
   },
   plugins: [],
