@@ -24,10 +24,11 @@ const Video = () => {
             <div className="h-[732.33px] w-[1288px] overflow-hidden rounded-[56px]">
               <video
                 src="/ctrl.mp4"
-                controls={true}
+                controls={false}
                 autoPlay={true}
-                muted
-                loop
+                muted={true}
+                loop={true}
+                playsInline={true}
               ></video>
             </div>
           </div>
