@@ -1,23 +1,4 @@
-import { SidebarLink, FeaturesTableItem, SupplyTableItem } from "@/types";
-
-export const sidebarLinks: SidebarLink[] = [
-  {
-    sectionID: "ctrl",
-    label: "•   What is ctrl",
-  },
-  {
-    sectionID: "staking",
-    label: "Staking",
-  },
-  {
-    sectionID: "revenue",
-    label: "Revenue Share",
-  },
-  {
-    sectionID: "tokenomics",
-    label: "Tokenomics",
-  },
-];
+import { FeaturesTableItem, SupplyTableItem } from "@/types";
 
 export const featuresTableItems: FeaturesTableItem[] = [
   {

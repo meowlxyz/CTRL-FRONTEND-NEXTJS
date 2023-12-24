@@ -12,7 +12,7 @@ const GetStarted = () => {
         src="/assets/bg-vector.svg"
         alt="background image"
       />
-      <div className="relative z-[1] flex flex-col items-center gap-10 px-60 py-36">
+      <div className="relative z-[1] flex flex-col items-center gap-10 px-60 py-36 max-md:px-10 max-md:py-6">
         <div className="flex flex-col gap-5">
           <h2 className="text-[52px] font-extrabold leading-[65px] tracking-normal">
             GET STARTED, IT&apos;S EASY

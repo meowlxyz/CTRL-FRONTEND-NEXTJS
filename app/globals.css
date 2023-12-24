@@ -29,13 +29,13 @@
   /* Medium Normal Text */
   .medium-normal-text {
     @apply text-fs-medium-normal font-normal leading-7;
-    @apply lg:text-base xl:text-lg
+    @apply lg:text-base xl:text-lg 
   }
   
   /* Huge ExtraBold Text */
   .huge-extrabold-text {
     @apply text-fs-huge-extrabold font-extrabold leading-none;
-    @apply max-xl:text-8xl
+    @apply max-xl:text-8xl max-lg:text-7xl
   }
   
   /* Larger Medium Text */

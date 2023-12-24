@@ -15,9 +15,9 @@ const Welcome = () => {
         src="./assets/bg-vector.svg"
         alt="bg-image"
       />
-      <div className="relative z-10 flex h-full w-full flex-col items-center p-12 pb-[7.5rem] text-light max-xl:px-6">
+      <div className="relative z-10 flex h-full w-full flex-col items-center p-12 pb-[7.5rem] text-light max-xl:px-6 max-lg:px-4">
         <Navbar />
-        <h1 className="huge-extrabold-text mt-[8rem] text-center uppercase">
+        <h1 className="huge-extrabold-text mt-[8rem] text-center uppercase max-md:mt-[4rem]">
           You
           <span className="relative">
             <Ellipse
@@ -39,7 +39,7 @@ const Welcome = () => {
           <span className="relative">
             <Ellipse
               width={178.13}
-              classes="absolute -top-[-0.1em] -left-[3.6em] z-50 bg-medium-ellipse-gradient"
+              classes="absolute -top-[-0.1em] -left-[3.6em] z-50 bg-medium-ellipse-gradient max-sm:hidden"
             />
             <span className="relative z-10">on</span>
           </span>{" "}
@@ -66,7 +66,7 @@ const Welcome = () => {
           href="https://t.me/ctrl_app_bot/trade"
         />
       </div>
-      <div className="h-full w-full p-12 pt-0">
+      <div className="h-full w-full p-12 pt-0 max-md:p-6">
         <div className="h-full w-full p-0 2xl:p-20">
           <WhatIsCtrl />
         </div>

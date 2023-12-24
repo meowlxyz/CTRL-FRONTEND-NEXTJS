@@ -10,9 +10,9 @@ const Video = () => {
         src="/assets/bg-vector.svg"
         alt="hero image"
       />
-      <div className="h-full w-full p-12 pt-0">
+      <div className="h-full w-full p-12 pt-0 max-md:p-6">
         <div className="h-full w-full p-0 2xl:p-20">
-          <div className="z-[2] flex flex-col items-center justify-center gap-10 px-[12rem] text-center">
+          <div className="z-[2] flex flex-col items-center justify-center gap-10 px-[12rem] text-center max-md:px-0">
             <h2 className="xlarge-extrabold-text uppercase">
               Discover New Tokens
             </h2>

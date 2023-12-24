@@ -2,10 +2,37 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { sidebarLinks } from "@/constants";
 import WalletConnectButton from "./WalletConnectButton";
+import { SidebarLink } from "@/types";
+import { BsFillPatchQuestionFill } from "react-icons/bs";
+import { HiOutlineSquare3Stack3D } from "react-icons/hi2";
+import { FaMoneyBillTrendUp } from "react-icons/fa6";
+import { RiTokenSwapFill } from "react-icons/ri";
 
 const Navbar = () => {
+  const sidebarLinks: SidebarLink[] = [
+    {
+      sectionID: "ctrl",
+      label: "•   What is ctrl",
+      icon: <BsFillPatchQuestionFill size={24} />,
+    },
+    {
+      sectionID: "staking",
+      label: "Staking",
+      icon: <HiOutlineSquare3Stack3D size={24} />,
+    },
+    {
+      sectionID: "revenue",
+      label: "Revenue Share",
+      icon: <FaMoneyBillTrendUp size={24} />,
+    },
+    {
+      sectionID: "tokenomics",
+      label: "Tokenomics",
+      icon: <RiTokenSwapFill size={24} />,
+    },
+  ];
+
   const [isSticky, setIsSticky] = useState(false);
   const [activeSection, setActiveSection] = useState("ctrl");
 
@@ -35,13 +62,13 @@ const Navbar = () => {
 
   return isSticky ? (
     <>
-      <div className="flex-between w-[85%] whitespace-nowrap rounded-2xl border border-dark-grey-border bg-dark-grey p-4">
+      <div className="flex-between w-[85%] whitespace-nowrap rounded-2xl border border-dark-grey-border bg-dark-grey p-4 max-sm:w-full">
         <div className="flex-center gap-[18px]">
           <Image src="/logo.svg" width={67} height={47} alt="logo" />
-          <h4 className="max-xl:hidden">Ctrl</h4>
+          <h4 className="max-xl:hidden max-lg:block">Ctrl</h4>
         </div>
         <nav className="w-max">
-          <ol className="flex-center medium-normal-text gap-10 px-[30px] py-[15px] capitalize text-muted-grey max-lg:px-[15px]">
+          <ol className="flex-center medium-normal-text gap-10 px-[30px] py-[15px] capitalize text-muted-grey max-md:hidden">
             {sidebarLinks.map((link) => (
               <li
                 className={`${
@@ -50,31 +77,38 @@ const Navbar = () => {
                 } hover-effect`}
                 key={link.label}
               >
-                <Link href={`#${link.sectionID}`}>{link.label}</Link>
+                <div className="hidden max-lg:block">{link.icon}</div>
+                <Link className="max-lg:hidden" href={`#${link.sectionID}`}>
+                  {link.label}
+                </Link>
               </li>
             ))}
           </ol>
         </nav>
         <WalletConnectButton />
       </div>
-      <div className={`navbar flex-center sticky w-full bg-transparent px-12`}>
-        <div className="flex-between w-[85%] whitespace-nowrap rounded-2xl border border-dark-grey-border bg-dark-grey p-4  shadow-xl">
+      <div
+        className={`navbar flex-center sticky w-full bg-transparent px-12 max-xl:px-6 max-lg:px-4`}
+      >
+        <div className="flex-between w-[85%] whitespace-nowrap rounded-2xl border border-dark-grey-border bg-dark-grey p-4 max-sm:w-full">
           <div className="flex-center gap-[18px]">
             <Image src="/logo.svg" width={67} height={47} alt="logo" />
-            <h4 className="max-xl:hidden">Ctrl</h4>
+            <h4 className="max-xl:hidden max-lg:block">Ctrl</h4>
           </div>
           <nav className="w-max">
-            <ol className="flex-center medium-normal-text gap-10 px-[30px] py-[15px] capitalize text-muted-grey max-lg:px-[15px]">
+            <ol className="flex-center medium-normal-text gap-10 px-[30px] py-[15px] capitalize text-muted-grey max-md:hidden">
               {sidebarLinks.map((link) => (
                 <li
                   className={`${
-                    activeSection === link.sectionID
-                      ? "!text-light transition-colors"
-                      : " "
+                    activeSection === link.sectionID &&
+                    "!text-light transition-colors"
                   } hover-effect`}
                   key={link.label}
                 >
-                  <Link href={`#${link.sectionID}`}>{link.label}</Link>
+                  <div className="hidden max-lg:block">{link.icon}</div>
+                  <Link className="max-lg:hidden" href={`#${link.sectionID}`}>
+                    {link.label}
+                  </Link>
                 </li>
               ))}
             </ol>
@@ -84,13 +118,13 @@ const Navbar = () => {
       </div>
     </>
   ) : (
-    <div className="flex-between w-[85%] whitespace-nowrap rounded-2xl border border-dark-grey-border bg-dark-grey p-4">
+    <div className="flex-between w-[85%] whitespace-nowrap rounded-2xl border border-dark-grey-border bg-dark-grey p-4 max-sm:w-full">
       <div className="flex-center gap-[18px]">
         <Image src="/logo.svg" width={67} height={47} alt="logo" />
-        <h4 className="max-xl:hidden">Ctrl</h4>
+        <h4 className="max-xl:hidden max-lg:block">Ctrl</h4>
       </div>
       <nav className="w-max">
-        <ol className="flex-center medium-normal-text gap-10 px-[30px] py-[15px] capitalize text-muted-grey max-lg:px-[15px]">
+        <ol className="flex-center medium-normal-text gap-10 px-[30px] py-[15px] capitalize text-muted-grey max-md:hidden">
           {sidebarLinks.map((link) => (
             <li
               className={`${
@@ -99,7 +133,10 @@ const Navbar = () => {
               } hover-effect`}
               key={link.label}
             >
-              <Link href={`#${link.sectionID}`}>{link.label}</Link>
+              <div className="hidden max-lg:block">{link.icon}</div>
+              <Link className="max-lg:hidden" href={`#${link.sectionID}`}>
+                {link.label}
+              </Link>
             </li>
           ))}
         </ol>

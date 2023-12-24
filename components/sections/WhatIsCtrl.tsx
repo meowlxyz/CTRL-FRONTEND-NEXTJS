@@ -9,14 +9,12 @@ const WhatIsCtrl = () => {
       id="ctrl"
       className="flex w-full flex-wrap items-center justify-between max-xl:justify-center"
     >
-      <div className="flex w-[39%] flex-col gap-8 text-light max-xl:w-[90%]">
+      <div className="flex w-[39%] flex-col gap-8 text-light max-xl:w-full">
         <div className="flex flex-col gap-6">
           <h6 className="larger-medium-text uppercase text-primary">
             Key Features
           </h6>
-          <h2 className="xlarge-extrabold-text whitespace-nowrap uppercase">
-            What is Ctrl?
-          </h2>
+          <h2 className="xlarge-extrabold-text uppercase">What is Ctrl?</h2>
         </div>
         <div className="flex flex-col gap-7">
           {featuresTableItems.map((item) => {

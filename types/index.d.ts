@@ -1,6 +1,8 @@
+import React from "react";
 export interface SidebarLink {
   sectionID: string;
   label: string;
+  icon: React.ReactNode;
 }
 
 export interface FeaturesTableItem {

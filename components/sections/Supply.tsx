@@ -21,7 +21,7 @@ const Supply = () => {
           src="/assets/total-supply.svg"
           alt="frame image"
         />
-        <div className="flex w-[50%] flex-col gap-5">
+        <div className="flex w-[50%] flex-col gap-5 max-xl:w-full">
           {supplyTableItems.map((item) => {
             return (
               <div
