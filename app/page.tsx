@@ -1,6 +1,5 @@
 import GetStarted from "@/components/sections/GetStarted";
 import Revenue from "@/components/sections/Revenue";
-import Staking from "@/components/sections/Staking";
 import Supply from "@/components/sections/Supply";
 import Video from "@/components/sections/Video";
 import Welcome from "@/components/sections/Welcome";

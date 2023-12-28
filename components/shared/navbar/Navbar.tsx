@@ -5,7 +5,6 @@ import Link from "next/link";
 import WalletConnectButton from "./WalletConnectButton";
 import { SidebarLink } from "@/types";
 import { BsFillPatchQuestionFill } from "react-icons/bs";
-import { HiOutlineSquare3Stack3D } from "react-icons/hi2";
 import { FaMoneyBillTrendUp } from "react-icons/fa6";
 import { RiTokenSwapFill } from "react-icons/ri";
 
