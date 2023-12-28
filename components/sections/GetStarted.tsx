@@ -18,7 +18,7 @@ const GetStarted = () => {
             GET STARTED, IT&apos;S EASY
           </h2>
           <p className="larger-medium-text text-ligt-muted-grey">
-            Simply open up our Web App, create an account <br></br> and you're ready to start your new trading journey!
+            Simply open up our Web App, create an account <br></br> and you&apos;re ready to start your new trading journey!
           </p>
         </div>
         <Button
