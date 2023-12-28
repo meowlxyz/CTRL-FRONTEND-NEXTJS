@@ -13,13 +13,8 @@ const Navbar = () => {
   const sidebarLinks: SidebarLink[] = [
     {
       sectionID: "ctrl",
-      label: "•   What is ctrl",
+      label: "What is CTRL?",
       icon: <BsFillPatchQuestionFill size={24} />,
-    },
-    {
-      sectionID: "staking",
-      label: "Staking",
-      icon: <HiOutlineSquare3Stack3D size={24} />,
     },
     {
       sectionID: "revenue",

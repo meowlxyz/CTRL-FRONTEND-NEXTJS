@@ -6,13 +6,13 @@ import Ellipse from "../ellipse/Ellipse";
 const Footer = () => {
   return (
     <div className="flex-between relative gap-5 border border-dark-grey-border bg-dark-grey p-20 py-5 max-md:px-6 max-sm:flex-col">
-      <p className="medium-normal-text ml-24  text-[#9D9999] max-md:ml-0">
-        © 2023 by ctrlapp. All rights reserved!
+      <p className="ml-24  text-[#9D9999] max-md:ml-0" style={{fontSize: "12px"}}>
+        © 2023 CTRL Foundation LLC, a series of Wrappr LLC (Marshall Islands, No. 965909) All rights reserved
       </p>
       <div className="flex-start gap-5">
-        <p className="medium-normal-text mr-7 text-[#D8D8D8B2] max-md:hidden">
+        {/* <p className="medium-normal-text mr-7 text-[#D8D8D8B2] max-md:hidden">
           Terms of Service
-        </p>
+        </p> */}
         <Link
           href="https://t.me/ctrlappio"
           target="_blank"
@@ -44,18 +44,6 @@ const Footer = () => {
         >
           <Image
             src="/icons/twitter-logo.svg"
-            width={25.71}
-            height={25.71}
-            alt="social-icons"
-          />
-        </Link>
-        <Link
-          href="https://www.instagram.com/Ctrlappio"
-          target="_blank"
-          className="rounded-full border border-solid border-[#FFFFFF1A] bg-[#111316] p-3 transition-colors hover:bg-[#1C1C1C]"
-        >
-          <Image
-            src="/icons/instagram-logo.svg"
             width={25.71}
             height={25.71}
             alt="social-icons"
