@@ -18,8 +18,7 @@ const GetStarted = () => {
             GET STARTED, IT&apos;S EASY
           </h2>
           <p className="larger-medium-text text-ligt-muted-grey">
-            Everything you need to attain the next level of growth in <br />
-            your career is available on CTRL.
+            Simply open up our Web App, create an account <br></br> and you're ready to start your new trading journey!
           </p>
         </div>
         <Button

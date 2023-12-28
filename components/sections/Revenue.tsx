@@ -9,7 +9,7 @@ const Revenue = () => {
         <div className="flex w-[39%] flex-col gap-7 max-xl:w-full">
           <div className="flex flex-col gap-5">
             <h4 className="larger-medium-text text-primary">
-              PROGRAM USING A SPECIFIC
+              Referral program
             </h4>
             <h2 className="xlarge-extrabold-text uppercase">Share & Earn</h2>
           </div>
@@ -24,8 +24,8 @@ const Revenue = () => {
               <div className="flex flex-col gap-3">
                 <h3 className="xl-bold-text">Individual Traders</h3>
                 <p className="medium-normal-text">
-                  You can also set up referral links and send them to your
-                  friends to earn 25% of the trading fees.
+                  You can set up referral links and send them to your
+                  friends to earn 25% of the trading fees they generate.
                 </p>
               </div>
             </div>
@@ -39,11 +39,11 @@ const Revenue = () => {
               />
               <div className="flex flex-col gap-3">
                 <h3 className="xl-bold-text">
-                  Group owners & Telegram Channels
+                  Group Owners
                 </h3>
                 <p className="medium-normal-text">
-                  Add the Ctrl bot to your telegram group or channel and 25% of
-                  the fees each time a trade is done in your group or channel.
+                  Add the Ctrl bot to your telegram group and earn 25% of
+                  the fees generated each time a trade is done in your group or channel.
                 </p>
               </div>
             </div>

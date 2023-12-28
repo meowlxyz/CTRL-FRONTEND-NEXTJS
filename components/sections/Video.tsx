@@ -14,12 +14,10 @@ const Video = () => {
         <div className="h-full w-full p-0 2xl:p-20">
           <div className="z-[2] flex flex-col items-center justify-center gap-10 px-[12rem] text-center max-md:px-0">
             <h2 className="xlarge-extrabold-text uppercase">
-              Discover New Tokens
+              The easiest way to buy tokens on Telegram
             </h2>
             <p className="larger-medium-text text-ligt-muted-grey">
-              Get alerts on newly created tokens on Ethereum in real-time with
-              our scanner. Integrated with our bot, you can easily add tokens
-              and snipe them with the click of a button.
+              Enjoy our simple and easy to use interface, accessible directly from Telegram.
             </p>
             <div className="h-[732.33px] w-[1288px] overflow-hidden rounded-[56px]">
               <video
